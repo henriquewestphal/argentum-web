@@ -57,12 +57,12 @@
 				Negociações	            
 	        </f:facet> 
 	
-			<p:column headerText="Preços">
+			<p:column headerText="Preço">
 				<h:outputText value="#{negociacao.preco}">
 				 	<f:convertNumber type="currency" minFractionDigits="2" locale="pt_BR" />
 				</h:outputText>
 			</p:column>
-			<p:column headerText="QuantidadeS">
+			<p:column headerText="Quantidade">
 				<h:outputText value="#{negociacao.quantidade}" />
 			</p:column>
 			<p:column headerText="Volume">
@@ -70,7 +70,7 @@
 				 	<f:convertNumber type="currency" minFractionDigits="2" locale="pt_BR" />
 				</h:outputText>
 			</p:column>
-			<p:column headerText="Datas">
+			<p:column headerText="Data">
 				<h:outputText value="#{negociacao.data.time}">
 					<f:convertDateTime pattern="dd/MM/yyyy"/>
 				</h:outputText>
